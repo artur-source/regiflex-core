@@ -11,10 +11,10 @@
   "scripts": {
     "seed": "node seed.js"
   },
-  "name": "regiflex-teste",
+  "name": "regiflex-core",
   "version": "1.0.0",
   "description": "[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/artur-source/RegiFlex-teste) [![Tecnologia](https://img.shields.io/badge/Frontend-React%2018.3.1-blue)](https://reactjs.org/) [![Backend](https://img.shields.io/badge/Backend-Supabase-green)](https://supabase.com/) [![Última Correção](https://img.shields.io/badge/Última%20Correção-2025--10--10-brightgreen)](./BUGFIXES.md)",
-  "main": "seed.js",
+  "main": "index.js",\n  "module": "index.js",\n  "exports": {\n    ".": "./index.js",\n    "./ui/*": "./frontend/src/components/ui/*",\n    "./contexts/*": "./frontend/src/contexts/*",\n    "./lib/*": "./frontend/src/lib/*"\n  },
   "directories": {
     "doc": "docs"
   },
