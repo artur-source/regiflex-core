@@ -1,32 +1,47 @@
 {
+  "name": "regiflex-core",
+  "version": "1.0.0",
+  "description": "RegiFlex Core - Infraestrutura, Autenticação, UI e Segurança RLS para Módulos de Extensão",
+  "main": "index.js",
+  "module": "index.js",
   "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./ui/*": "./frontend/src/components/ui/*",
+    "./contexts/*": "./frontend/src/contexts/*",
+    "./lib/*": "./frontend/src/lib/*"
+  },
+  "scripts": {
+    "seed": "node seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artur-source/regiflex-core.git"
+  },
+  "keywords": [
+    "regiflex",
+    "core",
+    "saas",
+    "healthtech"
+  ],
+  "author": "Manus AI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artur-source/regiflex-core/issues"
+  },
+  "homepage": "https://github.com/artur-source/regiflex-core#readme",
   "dependencies": {
     "@stripe/stripe-js": "^8.0.0",
     "@supabase/supabase-js": "^2.76.1",
     "dotenv": "^17.2.3",
     "dotenv-cli": "^10.0.0",
     "node-fetch": "^3.3.2",
-    "stripe": "^19.1.0"
+    "stripe": "^19.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-  "scripts": {
-    "seed": "node seed.js"
-  },
-  "name": "regiflex-core",
-  "version": "1.0.0",
-  "description": "[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/artur-source/RegiFlex-teste) [![Tecnologia](https://img.shields.io/badge/Frontend-React%2018.3.1-blue)](https://reactjs.org/) [![Backend](https://img.shields.io/badge/Backend-Supabase-green)](https://supabase.com/) [![Última Correção](https://img.shields.io/badge/Última%20Correção-2025--10--10-brightgreen)](./BUGFIXES.md)",
-  "main": "index.js",\n  "module": "index.js",\n  "exports": {\n    ".": "./index.js",\n    "./ui/*": "./frontend/src/components/ui/*",\n    "./contexts/*": "./frontend/src/contexts/*",\n    "./lib/*": "./frontend/src/lib/*"\n  },
-  "directories": {
-    "doc": "docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/artur-source/RegiFlex-teste.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/artur-source/RegiFlex-teste/issues"
-  },
-  "homepage": "https://github.com/artur-source/RegiFlex-teste#readme"
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
 }
