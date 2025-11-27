@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["./frontend/src/core/*"],
+      "@modules/*": ["./frontend/src/modules/*"]
+    }
+  },
+  "include": ["frontend/src/core/**/*", "frontend/src/modules/**/*"]
+}
