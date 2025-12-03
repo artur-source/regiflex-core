@@ -3,9 +3,20 @@
 // Exporta Contextos
 export { AuthContext, AuthProvider, useAuth } from './frontend/src/contexts/AuthContext';
 
+// Exporta Componentes de Layout
+export { default as Layout } from './frontend/src/components/Layout';
+export { default as Login } from './frontend/src/components/Login';
+export { Toaster } from './frontend/src/components/ui/toaster';
+
 // Exporta Utilitários e Configurações
 export { supabase } from './frontend/src/lib/supabaseClient';
 export { cn } from './frontend/src/lib/utils';
+
+// Exporta Componentes de UI
+export { Button } from './frontend/src/components/ui/button';
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './frontend/src/components/ui/card';
+export { Input } from './frontend/src/components/ui/input';
+export { Table, TableHeader, TableBody, TableRow, TableCell, TableHead } from './frontend/src/components/ui/table';
 
 // Exporta Componentes de UI (Exemplo: Button, Card, Input)
 // Para evitar um arquivo muito grande, exportaremos apenas alguns essenciais e o restante será importado diretamente pelo módulo.
