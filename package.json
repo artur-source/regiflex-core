@@ -1,5 +1,5 @@
 {
-  "name": "regiflex-core",
+  "name": "@regiflex/core",
   "version": "1.0.1",
   "description": "RegiFlex Core - Infraestrutura, Autenticação, UI e Segurança RLS para Módulos de Extensão",
   "main": "index.js",
@@ -16,7 +16,9 @@
     "./ui/button": "./frontend/src/components/ui/button.jsx",
     "./ui/input": "./frontend/src/components/ui/input.jsx",
     "./ui/table": "./frontend/src/components/ui/table.jsx",
-    "./ui/toaster": "./frontend/src/components/ui/toaster.jsx"
+    "./ui/toaster": "./frontend/src/components/ui/toaster.jsx",
+    "./api/provisioning": "./api/provisioning.js",
+    "./api/webhooks/stripe": "./api/webhooks/stripe.js"
   },
   "scripts": {
     "seed": "node seed.js"
@@ -29,7 +31,8 @@
     "regiflex",
     "core",
     "saas",
-    "healthtech"
+    "healthtech",
+    "modular"
   ],
   "author": "Manus AI",
   "license": "ISC",
@@ -50,5 +53,8 @@
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
