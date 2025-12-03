@@ -1,6 +1,6 @@
 {
   "name": "@regiflex/core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "RegiFlex Core - Infraestrutura, Autenticação, UI e Segurança RLS para Módulos de Extensão",
   "main": "index.js",
   "module": "index.js",
